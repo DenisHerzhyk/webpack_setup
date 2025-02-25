@@ -1,0 +1,7 @@
+import('lodash').then(({default: lodash}) => {
+    const numbers = [1, 5, 5, 5, 8, 10, 1, 1, 1, 5, 15, 42, 5]
+    const uniqNumbers = lodash.uniq(numbers)
+
+    console.log('Lodash uniq:' , uniqNumbers)
+    console.log('Lodash random:' , lodash.random(0, 100, true))
+})
